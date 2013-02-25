@@ -1,0 +1,282 @@
+.video-js {
+	margin-bottom: 152px;	
+}
+
+.vjs-slider {
+	height: 142px;
+	width: 100%;
+	position: absolute;
+	bottom: -142px;
+	background: #000;
+	/* CSS Gradient */
+	/* Can use the Ultimate CSS Gradient Generator: http://www.colorzilla.com/gradient-editor/ */
+	background: #242424; /* Old browsers */
+	background: -moz-linear-gradient(top, #242424 50%, #1f1f1f 50%, #171717 100%); /* FF3.6+ */
+	background: -webkit-gradient(linear, 0% 0%, 0% 100%, color-stop(50%,#242424), color-stop(50%,#1f1f1f), color-stop(100%,#171717)); /* Chrome,Safari4+ */
+	background: -webkit-linear-gradient(top, #242424 50%,#1f1f1f 50%,#171717 100%); /* Chrome10+,Safari5.1+ */
+	background: -o-linear-gradient(top, #242424 50%,#1f1f1f 50%,#171717 100%); /* Opera11.10+ */
+	background: -ms-linear-gradient(top, #242424 50%,#1f1f1f 50%,#171717 100%); /* IE10+ */
+	/* Filter was causing a lot of weird issues in IE. Elements would stop showing up, or other styles would break. */
+	/*filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#242424', endColorstr='#171717',GradientType=0 );*/ /* IE6-9 */
+	background: linear-gradient(top, #242424 50%,#1f1f1f 50%,#171717 100%); /* W3C */
+}
+.vjs-slideFrame {
+	
+	
+	position: absolute;
+	left: 26px;
+	overflow: hidden;
+	height: 100px;
+	margin: 10px 0;
+}
+.vjs-slidePane {
+	height: 100px;
+	position: absolute;
+	
+/*	border: 10px dashed #555;
+	width: 6000px; */
+	
+	z-index: 50;
+	transition: all .2s linear;
+	-webkit-transition: all .2s linear;
+	-ms-transition: all .2s linear;	
+}
+.vjs-slider .vjs-slideButton{
+	background: #7cf;
+	z-index: 100;
+	
+	height: 120px;
+	width: 25px;
+	
+	background: rgb(36,36,36); /* Old browsers */
+	background: -moz-linear-gradient(left,  rgba(36,36,36,1) 50%, rgba(31,31,31,1) 50%, rgba(23,23,23,1) 100%); /* FF3.6+ */
+	background: -webkit-gradient(linear, left top, right top, color-stop(50%,rgba(36,36,36,1)), color-stop(50%,rgba(31,31,31,1)), color-stop(100%,rgba(23,23,23,1))); /* Chrome,Safari4+ */
+	background: -webkit-linear-gradient(left,  rgba(36,36,36,1) 50%,rgba(31,31,31,1) 50%,rgba(23,23,23,1) 100%); /* Chrome10+,Safari5.1+ */
+	background: -o-linear-gradient(left,  rgba(36,36,36,1) 50%,rgba(31,31,31,1) 50%,rgba(23,23,23,1) 100%); /* Opera 11.10+ */
+	background: -ms-linear-gradient(left,  rgba(36,36,36,1) 50%,rgba(31,31,31,1) 50%,rgba(23,23,23,1) 100%); /* IE10+ */
+	background: linear-gradient(to right,  rgba(36,36,36,1) 50%,rgba(31,31,31,1) 50%,rgba(23,23,23,1) 100%); /* W3C */
+	filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#242424', endColorstr='#171717',GradientType=1 ); /* IE6-9 */
+
+	
+	cursor: pointer;
+}
+.vjs-slider .vjs-slideButton div {
+	position: absolute;
+	height: 16px;
+	width: 16px;
+	background-image: url( ../code/video-js-enhancements/design/video-js.png );
+	top: 50%;
+	margin-top: -8px;
+	
+	left: 50%;
+	margin-left: -8px;
+}
+.vjs-slider .vjs-slideLeftButton div {
+	background-position: 0 -95px;
+}
+.vjs-slider .vjs-slideRightButton div {
+	background-position: -16px -95px;
+}
+
+.vjs-slider .vjs-slideLeftButton {
+	float: left;
+}
+.vjs-slider .vjs-slideRightButton {
+	float: right;
+}
+
+.vjs-slider .vjs-slideList {
+	list-style: none;
+	margin: 0;
+	padding: 0;
+	height: 100px;
+}
+
+.vjs-slider .vjs-slideList li {
+	position: relative;
+	display: inline-block;
+	width: 146px;
+	height: 96px;
+	
+	border: 2px solid #aaa;
+	
+	margin-right: 10px;
+	
+	opacity: .5;
+}
+.vjs-slider .vjs-slideList li:hover { opacity: .75; }
+.vjs-slider .vjs-slideList li.selected {
+	opacity: 1;
+}
+.vjs-slider .vjs-slideList li:last-child {
+	margin-right: 0;
+}
+
+.vjs-slider .vjs-slideList li img {
+	position: absolute;
+	top: 0;
+	left: 0;
+	
+	width: 100%;
+	height: 100%;
+	z-index: 
+}
+
+.vjs-slider .vjs-slideList li .overlay {
+	position: absolute;
+	height: 65px;
+	width: 75px;
+	
+	top: 17px;
+	left: 37px;
+	
+	background: url(../img/filetypes.png);
+	opacity: .5;
+}
+
+.vjs-slider .vjs-slideList li .overlay.img { background-position: 0 0; }
+.vjs-slider .vjs-slideList li .overlay.video { background-position: -75px 0; }
+
+.vjs-slider .vjs-slideList li:hover .overlay { opacity: .75; }
+
+
+
+
+
+.vjs-playlist-controls {
+	position: absolute;
+	bottom: 0;
+	
+	
+	width: 94%;
+	padding: 0 3%;
+	height: 24px;
+}
+.vjs-playlist-controls .vjs-playlist-button {
+	/*margin-top: 3px;*/
+	height: 24px;
+	width: 24px;
+	margin: 0 3px;
+	cursor: pointer;
+}
+.vjs-playlist-controls .vjs-playlist-button div {
+	background-image: url( '../code/video-js/design/video-js.png' );
+	
+	height: 16px;
+	width: 16px;
+	margin: 4px;
+}
+
+.vjs-playlist-controls .vjs-playlist-button.vjs-first { float: left; }
+.vjs-playlist-controls .vjs-playlist-button.vjs-first div { background-position: -64px -95px; }
+
+.vjs-playlist-controls .vjs-playlist-button.vjs-previous { float: left; }
+.vjs-playlist-controls .vjs-playlist-button.vjs-previous div { background-position: -32px -95px; }
+
+.vjs-playlist-controls .vjs-playlist-button.vjs-next { float: left; }
+.vjs-playlist-controls .vjs-playlist-button.vjs-next div { background-position: -48px -95px; }
+
+.vjs-playlist-controls .vjs-playlist-button.vjs-last { float: left; }
+.vjs-playlist-controls .vjs-playlist-button.vjs-last div { background-position: -80px -95px; }
+
+.vjs-playlist-controls .vjs-playlist-button.vjs-autoplay { float: left; }
+.vjs-playlist-controls .vjs-playlist-button.vjs-autoplay div { background-position: -96px -95px; }
+
+.vjs-playlist-controls .vjs-playlist-button.vjs-stop { float: left; }
+.vjs-playlist-controls .vjs-playlist-button.vjs-stop div { background-position: -160px -95px; }
+
+.vjs-playlist-controls .vjs-filter-text {
+	float: right;
+	line-height: 1.9em;
+	font-size: 1.2em;
+	font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+	font-weight: bold;
+	text-align: left;
+	color: #bbb;
+}
+
+.vjs-playlist-controls .vjs-playlist-button.vjs-video-filter { float: right; }
+.vjs-playlist-controls .vjs-playlist-button.vjs-video-filter div { background-position: -112px -95px; }
+
+.vjs-playlist-controls .vjs-playlist-button.vjs-image-filter { float: right; }
+.vjs-playlist-controls .vjs-playlist-button.vjs-image-filter div { background-position: -128px -95px; }
+
+.vjs-playlist-controls .vjs-playlist-button.vjs-tour-filter { float: right; }
+.vjs-playlist-controls .vjs-playlist-button.vjs-tour-filter div { background-position: -144px -95px; }
+
+
+
+.vjs-default-skin .vjs-menu-button.vjs-share-button div {
+	background-position: 0 -111px;
+}
+
+.vjs-default-skin .vjs-menu-button.vjs-share-button .vjs-menu {
+	width: 15em;
+	left: -6em;
+}
+.vjs-default-skin .vjs-menu .vjs-menu-item { line-height: 16px; }
+.vjs-default-skin .vjs-menu .vjs-menu-item .vjs-menu-icon {
+	height: 16px;
+	width: 16px;
+	background-color: #222;
+	background-image: url('../code/video-js/design/video-js.png');
+	display: inline-block;
+	margin-right: .8em;
+	margin-bottom: -3px;
+	
+	-webkit-border-radius: 3px;
+	-moz-border-radius: 3px;
+	border-radius: 3px;
+}
+
+.vjs-default-skin .vjs-menu .vjs-menu-item .vjs-menu-icon.vjs-facebook { background-position: -16px -111px; }
+.vjs-default-skin .vjs-menu .vjs-menu-item .vjs-menu-icon.vjs-twitter { background-position: -32px -111px; }
+.vjs-default-skin .vjs-menu .vjs-menu-item .vjs-menu-icon.vjs-email { background-position: -48px -111px; }
+.vjs-default-skin .vjs-menu .vjs-menu-item .vjs-menu-icon.vjs-embed { background-position: -64px -111px; }
+
+
+/* Go under the control bar */
+.vjs-default-skin .vjs-controls {
+	z-index: 100;
+}
+
+.vjs-playlist-image-control {
+	position: absolute;
+	top: 0;
+	left: 0;
+	
+	height: 100%;
+	width: 10%;
+	background-color: rgba(0,0,0,.5);
+	
+	cursor: pointer;
+	
+	z-index: 50;
+}
+
+.vjs-playlist-image-control.vjs-playlist-image-right {
+	left: auto;
+	right: 0;
+}
+
+
+.vjs-playlist-image-control div {
+	width: 32px;
+	height: 32px;
+	margin-left: -16px;
+	margin-top: -16px;
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	
+	background-image: url( '../code/video-js/design/video-js.png' );
+	background-position: 0 -128px;
+}
+.vjs-playlist-image-control.vjs-playlist-image-right div {
+	background-position: -32px -128px;
+}
+
+
+
+
+
