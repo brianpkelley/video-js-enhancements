@@ -64,7 +64,7 @@
 	position: absolute;
 	height: 16px;
 	width: 16px;
-	background-image: url( ../code/video-js-enhancements/design/video-js.png );
+	background-image: url( 'video-js.png' );
 	top: 50%;
 	margin-top: -8px;
 	
@@ -160,7 +160,7 @@
 	cursor: pointer;
 }
 .vjs-playlist-controls .vjs-playlist-button div {
-	background-image: url( '../code/video-js/design/video-js.png' );
+	background-image: url( 'video-js.png' );
 	
 	height: 16px;
 	width: 16px;
@@ -219,7 +219,7 @@
 	height: 16px;
 	width: 16px;
 	background-color: #222;
-	background-image: url('../code/video-js/design/video-js.png');
+	background-image: url('video-js.png');
 	display: inline-block;
 	margin-right: .8em;
 	margin-bottom: -3px;
@@ -269,7 +269,7 @@
 	top: 50%;
 	left: 50%;
 	
-	background-image: url( '../code/video-js/design/video-js.png' );
+	background-image: url( 'video-js.png' );
 	background-position: 0 -128px;
 }
 .vjs-playlist-image-control.vjs-playlist-image-right div {
