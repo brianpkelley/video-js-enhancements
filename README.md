@@ -1,5 +1,10 @@
-Video.js Enhancements
+DEPRECATED
 ===============
+Please view https://github.com/brianpkelley/video-js-4-plugins
+
+
+Video.js Enhancements
+---------------
 
 Video.js Enhancements
 
