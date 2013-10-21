@@ -3,7 +3,7 @@ DEPRECATED
 Please view https://github.com/brianpkelley/video-js-4-plugins
 
 
-Video.js Enhancements
+Video.js v.3.x Enhancements
 ---------------
 
 Video.js Enhancements
